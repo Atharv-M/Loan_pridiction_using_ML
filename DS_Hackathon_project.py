@@ -1,7 +1,4 @@
-#!/usr/bin/env python
-# coding: utf-8
 
-# In[18]:
 
 
 # === Common Libraries ===
@@ -23,7 +20,7 @@ from sklearn.metrics import (
 )
 
 
-# In[15]:
+
 
 
 #Step 1: Data Preparation
@@ -73,7 +70,7 @@ y = df["loan_status"]
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
 
-# In[16]:
+
 
 
 #Step 2: Model Training + Hyperparameter Tuning
@@ -99,7 +96,7 @@ models = dict([
 ])
 
 
-# In[17]:
+#
 
 
 # Step 3: Model Evaluation
@@ -119,7 +116,7 @@ eval_df = pd.DataFrame(evals)
 print(eval_df)
 
 
-# In[18]:
+
 
 
 #Step 4: Dashboard
@@ -130,7 +127,7 @@ plt.ylim(0, 1)
 plt.show()
 
 
-# In[19]:
+
 
 
 #🔸 Feature Importance
@@ -178,7 +175,7 @@ plt.legend()
 plt.show()
 
 
-# In[21]:
+
 
 
 #Training Time Comparison
@@ -194,7 +191,6 @@ plt.title("Training Time Comparison")
 plt.show()
 
 
-# In[ ]:
 
 
 
