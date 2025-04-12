@@ -93,6 +93,10 @@ models = dict([
     tune("Boosting", GradientBoostingClassifier(), {
         'n_estimators': [100], 'learning_rate': [0.05, 0.1]
     }),
+    tune("Support Vector Machine", SVC(), {
+        'C': [0.1, 1, 10],
+        'kernel': ['linear', 'rbf']
+    })
 ])
 
 
